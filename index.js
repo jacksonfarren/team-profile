@@ -113,7 +113,7 @@ function generateApp() {
     
         ]).then(answers => {
           const engineer = new Engineer(answers.engineerName, answers.engineerID, answers.engineerEmail, answers.engineerGithub);
-          teamArray.push(engineer);
+          teamArr.push(engineer);
           addTeam();
         });
     }
@@ -147,7 +147,7 @@ function generateApp() {
     
         ]).then(answers => {
           const intern = new Intern(answers.internName, answers.internID, answers.internEmail, answers.internSchool);
-          teamArray.push(intern);
+          teamArr.push(intern);
           addTeam();
         });
     }
