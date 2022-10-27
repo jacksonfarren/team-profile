@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: rgba(255, 0, 0, 0.548);
+    --secondary: grey
+}
+
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#team-header {
+    background-color: var(--primary);
+}
+
+.card-header {
+    background-color: var(--secondary);
+    color: white;
+}

@@ -7,12 +7,13 @@ function team(employees) {
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>My Team</title>
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+      <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 jumbotron mb-3">
-                <h1 class="text-center text-blue">My Team</h1>
+                <h1 class="text-center" id="team-header">My Team</h1>
             </div>
         </div>
     </div>
@@ -38,10 +39,10 @@ function managerCard(manager) {
                 <h4>Manager</h4>
             </div>
 
-            <div class="card-body">
-                <p class="id">ID: ${manager.id}</p>
-                <p class="email">Email: <a href="mailto:${manager.email}">${manager.email}</a></p>
-                <p class="office">Office Number: ${manager.officeNum}</p>
+            <ul class="card-body list-group list-group-flush">
+                <p class="id list-group-item">ID: ${manager.id}</p>
+                <p class="email list-group-item">Email: <a href="mailto:${manager.email}">${manager.email}</a></p>
+                <p class="office list-group-item">Office Number: ${manager.officeNum}</p>
             </div>
         </div>
     </div>
