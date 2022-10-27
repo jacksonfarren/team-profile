@@ -13,7 +13,7 @@ function team(employees) {
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 jumbotron mb-3">
-                <h1 class="text-center" id="team-header">My Team</h1>
+                <h1 class="text-center py-3" id="team-header">My Team</h1>
             </div>
         </div>
     </div>
@@ -39,7 +39,7 @@ function managerCard(manager) {
                 <h4>Manager</h4>
             </div>
 
-            <ul class="card-body list-group list-group-flush">
+            <div class="card-body list-group list-group-flush">
                 <p class="id list-group-item">ID: ${manager.id}</p>
                 <p class="email list-group-item">Email: <a href="mailto:${manager.email}">${manager.email}</a></p>
                 <p class="office list-group-item">Office Number: ${manager.officeNum}</p>
@@ -58,10 +58,10 @@ function engineerCard(engineer) {
                 <h4>Engineer</h4>
             </div>
 
-            <div class="card-body">
-                <p class="id">ID: ${engineer.id}</p>
-                <p class="email">Email: <a href="mailto:${engineer.email}">${engineer.email}</a></p>
-                <p class="office">Github Profile: ${engineer.github}</p>
+            <div class="card-body list-group list-group-flush">
+                <p class="id list-group-item">ID: ${engineer.id}</p>
+                <p class="email list-group-item">Email: <a href="mailto:${engineer.email}">${engineer.email}</a></p>
+                <p class="office list-group-item">Github Profile: <a href="https://github.com/${engineer.github}" target="_blank">${engineer.github}</a></p>
             </div>
         </div>
     </div>
@@ -77,10 +77,10 @@ function internCard(intern) {
                 <h4>Intern</h4>
             </div>
 
-            <div class="card-body">
-                <p class="id">ID: ${intern.id}</p>
-                <p class="email">Email: <a href="mailto:${intern.email}">${intern.email}</a></p>
-                <p class="office">School: ${intern.school}</p>
+            <div class="card-body list-group list-group-flush">
+                <p class="id list-group-item">ID: ${intern.id}</p>
+                <p class="email list-group-item">Email: <a href="mailto:${intern.email}">${intern.email}</a></p>
+                <p class="office list-group-item">School: ${intern.school}</p>
             </div>
         </div>
     </div>
