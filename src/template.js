@@ -112,6 +112,7 @@ function generateTemplate(data) {
     const employees = html.join('');
 
     const generateTeam = team(employees);
+    return generateTeam;
 }
 
 module.exports = generateTemplate;

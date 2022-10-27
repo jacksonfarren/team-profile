@@ -6,19 +6,20 @@ const Intern = require("./lib/Intern");
 // npm imports
 const inquirer = require("inquirer");
 const fse = require("fs-extra");
+const validator = require("email-validator");
 
 // Template import 
 const template = require("./src/template");
 
-teamArr = [];
+const teamArr = [];
 
 function generateApp() {
     function addTeam() {
         inquirer.prompt([
             {
-                type: 'input',
+                type: 'list',
                 name: 'addTeamMember',
-                message: 'If you would like to add another team member, select one of the options below. Otherwise, choose "done"',
+                message: 'Add a team member! select one of the options below. Otherwise, choose "done"',
                 choices: ["Manager", "Engineer", "Intern", "Done"]
             }
         ]).then(function (val) {
@@ -152,8 +153,8 @@ function generateApp() {
         });
     }
 
-    function buildTeam(data) {
-        fse.writeFile("./dist/index.html", data, err => {
+    function buildTeam() {
+        fse.writeFile("./dist/index.html", template(teamArr), err => {
             if (err) {
                 console.log(err);
                 return;
