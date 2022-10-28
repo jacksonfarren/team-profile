@@ -55,7 +55,9 @@ To use this application, clone the repository and make sure you have node.js ins
 
 ### Video Demonstration
 
+![demonstration](/assets/demonstration.gif)
 
+For the full video. See [Assets](/assets//demonstration.webm)
 
 ## Credits 
 
