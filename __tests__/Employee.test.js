@@ -1,8 +1,8 @@
 const Employee = require("../lib/Employee");
 
 test("Creates a new employee objcet", () => {
-    const employeeObj = new Employee();
-    expect(typeof(employeeObj)).toEqual("object");
+    const employee = new Employee();
+    expect(typeof(employee)).toEqual("object");
 })
 
 test("Testing Employee name", () => {
