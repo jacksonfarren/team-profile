@@ -57,7 +57,7 @@ To use this application, clone the repository and make sure you have node.js ins
 
 ![demonstration](/assets/demonstration.gif)
 
-For the full video. See [Demonstration](https://youtu.be/YvmLyR0MgOA)
+For the full video. See <a href='https://youtu.be/YvmLyR0MgOA' target='_blank'>Demonstration</a>
 
 ## Credits 
 
